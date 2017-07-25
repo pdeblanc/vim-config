@@ -4,6 +4,7 @@ execute pathogen#infect()
 
 " global ui options
 inoremap jj <ESC>
+set hlsearch
 set number
 set ruler
 
