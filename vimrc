@@ -9,15 +9,9 @@ set number
 set ruler
 set mouse=nicr
 
-" syntax rules
+" filetypes
+filetype plugin indent on
 syntax on
-set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set autoindent
-set backspace=indent,eol,start
-set colorcolumn=120
 
 " flake8
 let g:flake8_cmd="flake8"
