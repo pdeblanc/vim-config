@@ -18,3 +18,6 @@ set shiftwidth=4
 set autoindent
 set backspace=indent,eol,start
 set colorcolumn=120
+
+" flake8
+let g:flake8_cmd="flake8"
