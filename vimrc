@@ -1,6 +1,7 @@
 " dependencies
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 execute pathogen#infect()
+let g:neocomplete#enable_at_startup = 1
 
 " global ui options
 inoremap jj <ESC>
@@ -15,3 +16,6 @@ syntax on
 
 " flake8
 let g:flake8_cmd="flake8"
+
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>
