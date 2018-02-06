@@ -25,6 +25,7 @@ let g:syntastic_javascript_checkers = ['eslint']
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeWinSize = 40
+let NERDTreeIgnore = ['\.pyc$']
 
 command Yankpath let @" = expand("%")
 
