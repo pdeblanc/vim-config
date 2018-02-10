@@ -81,7 +81,6 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
 Plugin 'lervag/vimtex'
 
 " All of your Plugins must be added before the following line
@@ -98,3 +97,6 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" vim-javascript
+let g:javascript_plugin_jsdoc = 1
