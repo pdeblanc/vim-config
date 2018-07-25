@@ -1,7 +1,7 @@
 " dependencies
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 execute pathogen#infect()
-let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_at_startup = 0
 
 " global ui options
 inoremap jj <ESC>
@@ -10,7 +10,7 @@ set number
 set ruler
 set mouse=a
 set ttymouse=sgr
-set statusline+=%F
+set statusline="%F%=%l,%c "
 set laststatus=2
 set backspace=indent,eol,start
 
@@ -25,13 +25,18 @@ let g:syntastic_javascript_checkers = ['eslint']
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
 let g:NERDTreeWinSize = 40
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '\.git']
 
 command Yankpath let @" = expand("%")
 
 " ctrlp options
 let g:ctrlp_max_files=0
 let g:ctrlp_custom_ignore='\v(htmlcov|node_modules|coverage)$'
+let g:ctrlp_working_path_mode = 0
+
+set wildignore+=*/build/*
+
+
 " greplace
 "
 set grepprg=ag
